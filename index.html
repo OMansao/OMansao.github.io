@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOCÊ VAI ME ENTENDER AGORA</title>
+    <link rel="shortcut icon" href="NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/CONTINUO TE VENDO....ico" type="image/x-icon">
+    <style>
+        
+      .button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #1e90ff, #104e8b);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* FIZ ESSE CÓDIGO COM AJUDA DE INTELIGÊNCIAS ARTIFICIAIS E DA INTERNET POIS ESTOU SEM TEMPO PARA FAZER
+TUDO E PESQUISAR DO 0, MAS O OUTRO PROJETO QUE QUERO CRIAR (QUE VAI APARECER PARA AS PESSOAS ANTES DESSE
+EU VOU FAZER SOZINHO USANDO APENAS O CONHECIMENTO APRENDIDO AQUI!) e sim fiz todo o css na mesma página que a do html e js por preguiça */
+
+@keyframes alternate-colors {
+  0% {
+    background: linear-gradient(to bottom, #1e90ff, #104e8b);
+  }
+  50% {
+    background: linear-gradient(to bottom, #104e8b, #1e90ff);
+  }
+  100% {
+    background: linear-gradient(to bottom, #1e90ff, #104e8b);
+  }
+}
+@media (max-width: 1280px) {
+  
+}
+.button.animated {
+  animation: alternate-colors 1s ease-in-out infinite;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom,red, #ff8c00, #ff8c00);
+}
+
+#back-button {
+  font-size: 40px;
+  padding: 10px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #1e90ff, #104e8b);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+#back-button:hover {
+  background: linear-gradient(to bottom,red, #ff8c00, #ff8c00);
+}
+body{
+  background-color: black;
+    background-image: url("NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/VIGIANDO-A-TODO-TEMPO1.gif");
+background-repeat: 0;
+background-size: cover;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+#text-container{
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to bottom, #FF0000, #FFA500);
+  font-family: 'Righteous', cursive;
+  background-color: yellow;
+}
+.aviso-js {
+  background: linear-gradient(to bottom, #FF4136, #FF851B, #FFDC00);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-family: arial black;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  color: #fff;
+  text-align: right;
+  padding: 10px;
+  font-family: 'Rubik Burned', cursive;
+}
+.Euzinho a {
+  background-clip: text;
+  -webkit-background-clip: text; /* Vai Apple, use as funções também vai... */
+  color: transparent;
+  background-image: linear-gradient(to bottom, #FF0000, #FFA500);
+  text-decoration: none; /* O corte que vai ficar de lembrança para os momentos ruins não serem esquecidos */
+}
+
+.Euzinho a:hover {
+  text-decoration: underline; /* e eu dar mais valor para o bons momentos */
+  
+}
+/* SÉRIO QUE VOCÊ BAIXOU OU INSPECIONOU O DOCUMENTO PARA VER COMO EU FIZ O CÓDIGO? REALLY? VOCÊ É MUITO CHATO E CURIOSO, GOSTO DISSO, DEIXEI ALGUMAS MENSAGENS AQUI NO DOCUMENTO POIS QUERO CONVERSAR COM PESSOAS CURIOSAS*/
+    </style>
+  </head>
+  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com%22%3E/
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap" rel="stylesheet">
+    <noscript>
+      <div class="aviso-js">
+        <p>HAHAHAHHAHA, IMAGINEI QUE VOCÊ IRIA DESATIVAR O JAVA SCRIPT PARA TENTAR BURLAR O SISTEMA, DESCULPE EU ESTOU 3 PASSOS NA SUA FRENTE E ESSA PÁGINA SÓ FUNCIONA COM O JS LIGADO BJS :D</p>
+      </div>
+    </noscript>
+    <audio autoplay loop>
+      <source src="NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/SAIA, NÃO TEM NADA QUE LHE INTERESSA AQUI!.mp3" type="audio/mpeg">
+    </audio>
+    <div id="button-container"></div>
+<div id="text-container"></div>
+<button id="back-button" style="display:none">Voltar</button>
+<footer style="bottom: 30px">feito por: <span class="Euzinho"><a href="https://www.instagram.com/eds.mansao" target="_blank">Eduardo Mansão</a></span></footer>
+<footer style="font-family: 'Aguafina Script', cursive;">em seus piores dias!</footer>
+    <script>
+
+const buttonContainer = document.getElementById("button-container");
+const textContainer = document.getElementById("text-container");
+const backButton = document.getElementById("back-button");
+
+const buttonData = [
+  {
+    text: "1) O INÍCIO DE TUDO\n \n OK, CHEGUEI NO LIMITE AGORA\n CRIEI UM DIÁRIO KKKKKKKKKKKK\n TO PIQUE AMERICANO DEPRESSIVO DE FILME, PORÉM INVÉS DE SER LIVRO É NUM GRUPO PRIVADO NO DISCORD (QUE TECNOLÓGICO RSRS)\n E PRA FALAR VERDADE ISSO NEM VAI SER UM DIÁRIO,  VOU SÓ FALAR O Q EU PENSO E O QUE TO SENTINDO EM ALGUM DIA QUALQUER, MAS É ISSO...\n VOU COMEÇAR COM UM 'ERA UMA VEZ...' — 18/03/2023 23:41\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/PROJETANDO AINDA.png"
+  },
+  {
+    text: "2) ESSAS DÚVIDAS AINDA VÃO ME MATAR\n \n Será que o que estou sentindo é carência? Não pode ser. Tenho amigos legais, minha família também é legal comigo, mas então por que eu estou falando sozinho comigo mesmo num grupo privado que nem sei se alguém vai ver isso algum dia? Sei lá, minha mente é maluca, uma hora eu fico extremamente feliz e com um ego gigantesco e às vezes no mesmo dia ou momento já bate uma tristeza e decepção, deve ser o que o Jhom falou: 'Quanto mais você busca melhorar mais você se cobra e mais responsabilidade você tem.'\n Será que não estou reclamando demais? Pois sempre tem alguém pior que você e tu tens que agradecer as coisas boas da vida, mas não entendo porque as coisas têm que ser assim... Estamos na geração com mais problemas psicológicos, depressão e ansiedade, eu não quero entrar nessa estatística por mais que talvez já esteja dentro.\n A vontade de se matar aumenta cada vez mais, sendo que ironicamente as coisas na minha vida só melhoram... estou namorando uma pessoa legal, estou evoluindo corporalmente e mentalmente, estudando para o Enem, mas deste que iniciou a quarentena de alguma forma meu psicológico foi destruindo de pouco em pouco não sei por quê. Talvez devido às brigas familiares, ou então o isolamento que por mais que eu amava ficar 24 horas dentro do meu quarto jogando lol e sendo o mais antissocial possível. Pode ser que isso me afetou negativamente.\n Eu mudei muito, eu era um menino tão alegre, extrovertido até minha adolescência chegar e com passar do tempo fui virando o mais introvertido e solitário possível... estou segurando muito o choro enquanto escrevo isso por mais que eu não entenda o porquê estou fazendo este texto. Talvez isso seja uma carta com pedido de ajuda? NÃO! Eu sou orgulhoso demais para pedir ajuda alguém principalmente com coisas relacionadas a emoções.\n Falta 140 mensagens para exceder o limite de letras do Discord então vou me despedir por aqui mesmo, espero que tudo isso seja passageiro e as coisas melhorem com o tempo. — 18/03/2023 23:41",
+  },
+  {
+    text: "3) SE MATAR É A SOLUÇÃO? SIM!\n \n Eu odiava escrever, sabe? Mas desde que acabou a quarentena, comecei a escrever bastante. Este ano já escrevi uns 6 documentos gigantescos no Word com conteúdos relevantes para mim, mas ainda estou aprimorando minha escrita, vocabulário e ortografia. Até porque o Enem está aí esse ano e preciso estudar bastante para ter uma boa nota, principalmente na redação e fazer uma faculdade para ser alguém na vida. Por mais que faculdade não seja garantia de riqueza, todos os meus amigos e conhecidos da mesma idade vão fazer faculdade e eu não posso ficar para trás! Será que é isso o que eu quero? Não sei o que eu realmente quero.\nQual o sentido da vida? Qual o propósito na terra? A religião explicaria isso? Alguém muito inteligente ou sábio responderia isso? Ou é uma pergunta sem resposta? São tantos questionamentos... Talvez eu estudando e estudando mais, eu possa chegar próximo a uma conclusão. Porque hoje, sinto que não tenho peso nenhum na terra, mas será que não estou me cobrando demais? Pois só tenho 17 anos e tenho muito tempo ainda para errar, acertar e descobrir o que eu realmente quero.\nKKKKKKKKK, isso é hilário! Será que tem outros jovens no Brasil com o mesmo pensamento que estou tendo? Fazendo as mesmas coisas que estou fazendo? Com certeza sim! Eu não quero ser mais um. AAAHHHH, quanta coisa que passa na minha mente todo santo dia a todo momento, eu não consigo descansar. O único momento que consigo limpar minha mente é meditando, e eu teria que meditar o dia inteiro para conseguir me acalmar.\nMe matar resolveria tudo isso? Com certeza sim, mas e se o céu e o inferno realmente existirem? Eu iria para o inferno sem chance de perdão! E minha família, que ficaria com a dor de ter perdido um ente querido (não entendo o porquê minha família me ama tanto), eu nem sou tudo isso... O que eu sou? O que eu faço de bom?\nMinha mente é extremamente estranha, eu deveria ser estudado! Já mudei o assunto várias vezes, e levando em consideração que estou falando sozinho (isso é deveras estranho ou caso de terapia).\nEu me pergunto por que o ser humano criou tantas coisas para fazer você não se matar... Pra que precisamos viver tanto? Um cachorro vive 12 anos. Tudo o que fazemos é porque temos consciência disso. Se fossemos irracionais, morreríamos muito mais cedo. A gente nasce já tendo que estudar e passamos uma adolescência que, na maioria das vezes é traumatizante. E já viramos adultos abalados e despreparados psicologicamente, precisando entrar no mercado de trabalho disputadíssimo para conseguir garantir uma boa vida para você, sua família e talvez seus filhos. — 19/03/2023 00:12\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/A SOLUÇÃO.jpg"
+  },
+  {
+    text: "4) MEDO\n \n Olha eu aqui de novo, a questão é: se fala tanto em se matar por que não se mata logo? A resposta é simples e direta: MEDO! Medo de talvez alguma religião estiver certa. Medo da dor que meus familiares vão sentir aqui em vida e talvez eu acarretar um outros suicídios. Medo de talvez eu perder uma vida maravilhosa que eu terei, mas que só saberei vivendo. MEDO E INCERTEZA é as palavras, as duas palavras que mais estão me consumindo nos últimos tempos e não é por falta de estudo, dedicação ou força de vontade, talvez seja a alta insegurança que está me deixando assim. Dito isso, vou voltar a estudar matemática por que tenho uma tabuada para aprender e estatísticas para fazer! — 21/03/2023 10:31",
+  },
+  {
+    text: `5) A BAGUNÇA QUE ESTÁ MINHA CABEÇA\n \n Sério, eu devo estar ingerindo umas 4k ou mais de calorias por dia. 2L de hipercalórico, comendo igual um mamute durante o dia, estou de um jeito que se comer mais um pouco eu vomito. (ganhei 3 quilos em 5 dias!!!)\nEu penso muito. Se pá a boa é só fazer o que tem que ser feito relaxar e deixar a vida me levar sem preocupar muito, porque tipo, eu estou cuidando da minha saúde perfeitamente, malhando pesado, batendo os macros, dormindo o necessário, meditando e estudando bastante, eu literalmente estou rushando o late game total! Daqui a 5-6-7 ou 8 anos (25 o número final) eu provavelmente vou estar na minha melhor versão de todos os tempos devido ao esforço desse menino preocupado, ansioso e medroso de agora! — 25/03/2023 22:10`,
+  },
+  {
+    text: '6) A FALTA DE CONFIANÇA E ¿AFETO?\n \n Estou tomando gosto em escrever, falar sozinho está ficando cada vez mais natural para mim, respondo às pessoas com o silêncio e debato comigo mesmo pelo que é certo ou o que deve ser feito. Talvez ser louco não é tão ruim assim kkkkkk \n Até por que não existe um melhor amigo do que você mesmo... ninguém vai se importar ou se preocupar tanto comigo como eu mesmo, sei que trilhar uma história sozinho não é bom para a mente além de ser muito mais difícil, por isso me esforço em manter um relacionamento tanto amoroso quanto amigável com as pessoas, mas minha natureza é não se importar com os outros, minha mãe,  meu irmão, duvidaram se eu realmente o amavam e falaram que eu estava me tornando uma pessoa muito fria, é verdade, meu coração virou uma rocha maciça que estou gradualmente lapidando tentando fazer as moléculas se soltarem e talvez mudar de estado kkkkkkk a questão é que eu gosto de refletir, isso me faz ter mais autoconhecimento.\n Todas às vezes que chorei no meu quarto sozinho por achar que ninguém me amava, eu estava carente talvez, hoje infelizmente acontece o oposto, demonstrar amor, afeto e carinho é uma tarefa deveras difícil para mim, não por falta delas meus pais sempre foram muito carinhosos comigo, mas acabei me tornando essa pessoa que não me orgulho,  mas não sou contra, essa personalidade me atrapalha e me ajuda muitas vezes. Quem ta comigo eu sei que é verdadeiro e não hesito nem um pouco em me afastar ou de acabar o contato caso não for. Conselhos, dicas, amizades, piadas é bom, mas no momento eu preciso de dedicação foco e estudo e o resto que se foda! — 26/03/2023 01:42',
+  }
+  ,{
+    text: "7) É PARA VOCÊ IRMÃOZINHO\n \n Eu, privilegiado? Filho favorito? Ganhei tudo do bom e do melhor na mão? VSF!\n Tudo que eu tenho e conquistei foi por mérito e esforço meu, não sou de falar ou de procrastinar, sou de fazer quanto antes e me esforçar para sair o melhor ou bem feito naquilo que quero e me interessa. Não vem dizer que tudo que conquistei foi 'mimo' deste criança eu recebia uma ordem e eu cumpria, e quando eu fazia algo errado eu assumia ou tentava resolver com minhas próprias mãos, hoje não trago nenhum problema para meus pais e não por falta deles e sim por que sou homem de resolvê-los! — 26/03/2023 01:54",
+  }
+  ,{
+    text: "8) A DEPRESSÃO E O RANCOR AUMENTANDO CADA VEZ MAIS!\n \n Estou me sentindo tão triste e incapaz hoje... \n Talvez seja minhas inseguranças falando mais alto. \n Talvez seja a falta de sorte. \n Ou talvez tenha sido apenas o treino de perna que eu me matei fazendo hoje. \n Estava refletindo e eu sempre ME MATEI para ajudar os outros, mas nunca pedi nada em troca, hoje eu carrego isso e faço com uma naturalidade. Nunca faço nada esperando algo dos outros em troca, tanto em ajuda, tanto em carinho afeto ou atenção. Eu faço todas essas coisas para as pessoas sem querer necessariamente retribuição. \n Talvez isso tenha me deixado mais frio... \n Isso fez eu abrir meus olhos quanto a amigos. \n Ninguém é seu amigo de fato, nessa vida é você e Deus parceiro o resto está sempre por troca, tanto material, quanto emocional e quando você não estiver mais dando o que elas querem, a amizade simplesmente acaba. Isso vale também para relacionamentos, mas não estou criticando as pessoas quanto a isso, ninguém pensa como eu penso e está tudo bem. O amor é uma estratégia da natureza criada para fazer as espécies se atraírem e procriarem mais, fazendo assim a multiplicação e diminuindo o risco de extinção. Logo o amor é algo irracional e quando algo é irracional, a maioria das vezes não é nada bom, você agir sem pensar é terrível! E nosso corpo nos sabota diariamente! \n Aaaaah isso tudo é uma tentativa de explicar minhas inseguranças, inseguranças essas que guardo apenas comigo e que tento a todo custo superá-las, mas posso dizer que a INCAPACIDADE seria a palavra-chave nesse momento, talvez eu seja incapaz de realizar qualquer coisa que eu queria fazer com um grau de excelência.\n Ééééé, vou dormir por que amanhã preciso acordar para mais um dia eu me moldar do jeito que a sociedade quer que eu seja, e estudar para futuramente trazer benefícios para a mesma, enquanto apenas aceito calado e prossigo, pois vivo nessa sociedade que não tem o que fazer a não ser sorrir e acenar :D👋 - 29/03/2023 22:59\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/NÃO ESTÁ BEM.gif"
+  }
+  ,{
+    text: "9) SERÁ QUE MINHA TEORIA ESTÁ CORRETA?\n \n Parece que essas reflexões estão me mudando de certa forma kkkkkkkk \
+NÃÃÃÃÃO AGORA VÃO ACHAR QUE EU FALO ISSO PARA FILOSOFAR OU \"LACRAR \" ENQUANTO, NA VERDADE ESTOU APENAS DESABAFANDO COMIGO MESMO ENQUANTO GUARDO MEUS PENSAMENTOS PARA ALGUÉM VER O QUE EU PENSAVA DEPOIS QUE EU ME MATAR, OU EU APAGAR ESSE GRUPO DEPOIS QUE TUDO DER CERTO E AGRADECER QUE TUDO DEU BOM E FINGIR QUE NÃO TEVE FASE RUIM E QUE HIPOCRISIA NÃO EXISTE! — 30/03/2023 23:43\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/NINGUÉM ME CONHECE DE FATO.png"
+  }
+  ,{
+    text: "10) TEMPO, MEU MAIOR INIMIGO!\n \n Nossa, como o tempo é cruel, sério!\nQuando se é criança tu pouco importa com o tempo, só quer brincar, descobrir novas coisas, aprender, presenciar custe o tempo que custar, sem preocupações.\nAo chegar na adolescência que se abre dois caminhos:\nO dos estudos\nE o do namoro\n (Um terceiro seria o do tráfico, mas não vou entrar em detalhes) \nTento ao máximo conciliar essas duas coisas,  mas é difícil... eu realmente não tenho tempo. Estudar para o Enem de manhã, estudar na escola pela tarde e cuidar do meu corpo de noite consome todo meu tempo (tirando as brigas mentais e traumas diários). Não sei o que passa dos ao meu redor quanto a isso, já que todos também estão nessa mesma situação.\nEssa transição de adolescente para homem adulto é complicada, pois você precisa de muito foco e determinação, sim, eu sei que tudo vai ser recompensado futuramente, mas perder o agora dá um vaziiiiio que faz voltar naquela insegurança de: E SE EU NÃO FOR CAPAZ? SE EU NÃO CONSEGUIR? SE NÃO DER CERTO?\nTem que dar certo! Eu preciso fazer dar certo.\nEle está numa fase muito conturbada e instável na vida dele na qual é melhor resolver tudo primeiro. Ele precisa trabalhar e estudar, só de pensar que estou chegando na parte da vida no qual meu tempo inteiro vai ser no trabalho para bancar minha faculdade se for preciso e estudar para algum dia eu chegar na estabilidade financeira e emocional dá um arrepio! e que a criança que não se preocupava com o tempo agora luta contra ele para fazer der certo tudo que precisa dar certo. Como eu queria que desse certo para nos, mas o tempo e talvez a 'sorte' não está ao nosso favor no momento...\nEnfim, foi bom o TEMPO que duramos juntos.\nMEU DEEEEEUS COMO O TEMPO PASSA RAAAAAAAPIDO,  ANSIEDADE ATACANDOOOOO. UM CONSELHO QUE EU DOU É: GERENCIE SEU TEMPO DA MELHOR MANEIRA POSSÍVEL QUANTO ANTES, E SE PLANEJE PARA O FUTURO, POIS AS COISAS PASSAM MUITO RÁPIDO E QUANDO TU MENOS ESPERAR PODE TER PASSADO AQUELA OPORTUNIDADE E O TEMPO NÃO VOLTA. APROVEITE CADA MOMENTO, SÉRIO MESMO! — 30/03/2023 23:43\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/O TEMPO PASSA RÁPIDO.gif"
+  }
+  ,{
+    text: "11) CONFUSO TENTANDO ME AUTOCONHECER\n \n Ai ai, esse é o lugarzinho de onde eu venho depositar minhas mágoas, igual uma criança quando apanhava da mãe e ia desabafar com os amigos ou irmãos...\n Eu sempre digo para todos que 'NINGUÉM ME CONHECE' porém o ponto é que: EU ME CONHEÇO? Será que nessa vibe dê o meu 'EU' de verdade está escondido e que ninguém conhece e acabei me tornando o 'EU FALSO' e já nem sei quem eu sou mais? Difícil falar, o que posso dizer é que eu quando criança era um menino elétrico, falante, brincalhão, totalmente extrovertido às vezes até chato! Mas dos 13 para frente essas características foram desaparecendo pouco a pouco por conta de tudo que aconteceu durante essa etapa da vida que eu achava que era apenas momentâneo e esse 'EU' voltaria, enquanto o 'EU' de hoje sério, angustiado, cheio de mágoas, rancoroso, introvertido, calado seria apenas uma fase que logo iria embora, que hoje vejo que não sei se vai, se quem eu vou me tornar de fato...\n Na escola e na rua eu sempre fui mais alegre do que em casa, mas isso é normal e comum, de uns anos para cá eu criei uma máscara na qual eu era feliz, extrovertido, que zoava todos na escola para passar uma boa impressão e me enganar que estava tudo bem. Não sei muito bem quem eu sou, o que me tornei se isso é bom, ruim, se tem volta. Minha mente está/é uma confusão, minha maior tristeza é saber que todas as pessoas que conheci, relacionei de uns 4 anos para cá conheceram essa 'versão ruim' de mim que eu nunca imaginei ser, tanto mesmo meus familiares que acham que eu sou assim quando na verdade nem eu sei se realmente sou assim ou não. \n Chega estou ficando muito confuso, eu realmente não sei do que estou falando, vou deixar isso guardado aqui para o dia que eu me entender eu voltar nesse humilde lugarzinho. — 30/03/2023 23:43\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/MENTE CONFUSA.jpg"
+  }
+  ,{
+    text: "12) CONFIRMANDO MINHA TEORIA \n \n Conversando um pouco com um conhecido percebi que ele tinha uma visão totalmente distorcida e que não fazia jus ao meu eu, mas ele não estava errado, pois a imagem que ele montou minha em sua cabeça era com base nas minhas atitudes, então eu cheguei na conclusão que realmente ninguém consegue me definir, eu sou tudo e nada ao mesmo tempo, qualquer um pode tentar, mas ninguém vai conseguir achar um padrão ou presumir minhas atitudes, ou pensamentos 100% — 01/04/2023 22:12\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/AI AI COMO TUDO SE ENCAIXA COMO EU PENSO.png"
+  },
+  {
+    text: "13) RELIGIÃO\n \n Percebi que eu tenho um tique na sobrancelha sempre que acontece alguma coisa na qual aumente demasiadamente minha adrenalina, sendo assim as pessoas na qual estão falando algo comigo, conseguem perceber como estou reagindo a tal assunto podendo ou não tirar proveito disso.\n Percebi também que EU NÃO CONSIGO FALAR BAIXO, É BRINCADEIRA MINHA INCAPACIDADE COGNITIVA EM FALAR BAIXO, DESCULPE, MAS NÃO CONSIGO!!\n Mexendo num telefone aqui (que me deixa triste em saber na origem, mas não posso fazer nada no momento mesmo não compactuando com a tal atitude) lembrei de quando eu estava usando pc pelas primeiras vezes e reclamei com um técnico que não estava conseguindo baixar jogos no pc, que estava bugado e ele me explicou que a play store era apenas para telefone e não para pc kkkkkkkkkk ENFIM VOU INICIAR O TEMA QUE EU QUERIA FALAR HOJE:\n Religião. Siiiiim tema polêmico, vou passar minha visão sobre a mesma (antes disso, estava pensando em criar um documento html bonitinho colocando tudo que tem aqui dentro lá e fazer de uma forma para colocar em algo para apenas os meus melhores amigos e pessoas mais próximas verem, e quando eu fizer isso significará que estarei prestes a me matar)\n SOBRE A RELIGIÃO, então, eu deste pequeno sempre fui criado dentro de igreja, pois minha mãe é MUITO religiosa e queria que seus filhos seguissem o caminho do bem, o tal é que: É INSUPORTAVEL PARA UMA CRIANÇA FICAR 2-3-4 HORAS NUM LOCAL SEM FAZER NADA, APENAS OLHANDO UM PASTOR FALAR COISAS QUE VOCÊ MAL ENTENDE OU SE QUER FAZ E CANTANDO LOUVORES, tirando a parte de quando pediam para todos se levantarem e depois para todos se sentarem e ficando nesse loop, a parte mais legal era quando pedia para abraçar ou cumprimentar o irmão do lado ou quando sua mãe deixava você brincar com as outras crianças enquanto o culto rolava. MAS A REAL MESMO É QUE VOCÊ CRIANÇA DORMIA A MAIOR PARTE DO CULTO, ISSO QUANDO SUA MÃE NÃO TE ACORDAVA DANDO ESPORRO PARA NÃO DORMIR E RESPEITAR A CASA DO SENHOR KKKKK\n Quando cheguei por volta dos meus 11-12 anos eu revoltei e parei de ir para a igreja, pois sentia que aquilo não estava me agregando em absolutamente NADA, pois eu via o 'espirito santo entrando no corpo das pessoas' e eu queria que acontecesse o mesmo comigo e nunca acontecia, eu pedia coisas a Deus e nunca acontecia. Hoje eu entendo que as coisas não funcionam dessa maneira, mas naquela época não fazia sentido para mim estar na igreja, e claro que teve muitas brigas e discursões com minha mãe até ela entregar eu e meu irmão mais velho de mão e desistir de nos arrastar obrigados a igreja.\n Eu pensei que por não estar dentro da igreja eu automaticamente estaria no 'mundo' sendo mais suscetível a usar drogas, tratar as pessoas mal por causa disso, mas com o tempo percebi que sua personalidade e caráter não está em quem vai ou não na igreja e sim na pessoa como um todo (ser humano ruim tem em todo canto, até dentro da igreja e presenciei muito isso dentro delas, por isso não confio nos outros). Eu penso hoje que a igreja serve para pessoas que precisam. Talvez saiu da cadeia recentemente e precisa se endireitar ou estava no mundo das drogas e ta largando o vício, a igreja vai auxiliar essas pessoas, mas se tu leva uma vida 'normal' não precisa estar abitolado numa igreja até porque a igreja nunca me mudou ou me transformou em nada!\n Outra questão que eu levanto aqui é: se Deus é onisciente, por que ele deixou adão e eva comer o fruto proibido? Se ele é perfeito porque errou ao criar o ser humano que claramente é uma obra falha? Porque ele me colocou num mundo no qual eu sou obrigado a seguir as ordens dele, caso contrário eu sofrerei as consequências no inferno quando, na verdade eu nem tive escolha e sou obrigado a viver nesse mundo, pois se eu me matar vou para o inferno também, Deus é algo complexo né... eu nunca estudei religião afundo então pode ter respostas que eu não sei, porém, isso é algo que me encuca e faz eu ter um pé atrás quanto a religião e que faz eu ser agnóstico.\n Independente das minhas atitudes, do meu comportamento ou escolhas, Deus já sabe qual vai ser o resultado disso, sendo necessário apenas confiar e ter fé -_-?\n Outra coisa: O que garante que Deus é o DEUS VERDADEIRO e os outros Deuses de outras religiões são os errados ou 'cópias do diabo para enganar os fiéis?'\n Muitas coisas de ruim acontece todos os dias, muitas com pessoas inocentes e que não mereciam o mal, e, porque disso Deus? Permitindo que seus filhos sofram isso? Teste de fidelidade? por que permite que um bebê nasça para morrer logo em seguida por qualquer tipo de complicações? Para a mãe que vai ter essa dor ter mais fé em você? e se ela não acreditar em você? a religião é aberta a várias interpretações e cheia de indagações sem conclusões que te leva a usar 100% da fé apenas. \n Não penso em voltar para igreja, pois acredito ser uma boa pessoa e essas questões fazem eu não ir de cabeça nas religiões...\n  Talvez mostrar isso para meu psicólogo ou terapeuta é uma boa kkkkkk, ou talvez procurar na play store se tem algum aplicativo que me responda — 04/04/2023 01:04\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/SUICIDE.png"
+  },
+  {
+    text: "14) RELIGIÃO \n \n Ainda sobre religião, quando eu era pequeno acontecia vários fenômenos digamos 'sobrenaturais' comigo como a paralisia do sono na qual uma vez me senti sendo enforcado e vários fenômenos com minha família frequentemente por na época sermos extremamente religiosos, mas hoje em dia nada disso acontece mais. Não sei muito bem se isso tem algum significado.\n Eu particularmente não entendo o diabo, ele é um ser revoltado por não conseguir ser Deus e por esse motivo tenta persuadir os humanos para conseguir criar uma legião para ir contra Deus sabendo que não vai ganhar? Ou ele quer apenas dominar os seres humanos, pois quer vê-los sofrer? Invés dele incorporar no Elon musk, Putin e fazer o que ele quer, ele atenta os indivíduos comuns da sociedade???? Toda essa história é beeem confusa. \n Acredito que a realidade é que a religião cristã ela criou várias histórias (ou não) com o intuito das pessoas na qual seguir, não cometer crimes ou práticas ruins ao próximo e levar uma vida boa e alegre com Deus. Os exemplos e consequências é para elas terem medo e seguir no caminho correto, ou seja, a intenção é boa, mas é verdadeira? Não tenho a certeza, mas sinceramente... torço para que toda essa história da bíblia seja verídica! — 05/04/2023 23:30\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/INCUBUS.jpg"
+  },
+  {
+    text: "15) TENTANDO ENCONTRAR RESPOSTAS\n \n Ainda estou tentando entender do porquê escrevo esses textos, ou o que me levou a escrevê-los, talvez tenha sido para apenas desabafar comigo mesmo, ou para mostrar para os confiáveis o que realmente penso das coisas e eles me entenderem melhor. Pensei que seria algo temporário, mas está durando bastante tempo -_-'\n Eu tento fazer coisas diferentes o dia inteiro, tomar atitude, falar, brincar, acertar, errar para ter histórias de vida e não tornar tudo algo monótono e sem graça como eu levaria a vida se apenas deixasse meu 'eu interior' agir, talvez isso não me beneficie, mas any way. A mente humana é algo realmente doido, evoluímos ao ponto de saber que sabemos e tentamos entender nós mesmos e tudo ao nosso redor e quanto mais passa as gerações mais problemas psicológicos aparecem, cito bastante esse tema, pois a sociedade onde nós vivemos oprime de uma forma os desfavorecidos e principalmente os mais jovens, ampliando o índice de depressão e ansiedade sobrando apenas o caminho do crime ou dos estudos para TALVEZ tudo der certo com seu esforço e ser uma pessoa bem sucedida assim como o enzo que já nasceu no melhor sem esforço nenhum — 07/04/2023 00:59",
+  },
+  {
+    text: "16) SIGNOS KKKKKKKK\n \n Eu não acredito em signos. O ser humano é muito complexo, o local e o jeito que ele viveu determina mais como ele vai ser do que resumir em leoninos são vaidosos e que quem tem ascendente em escorpião não presta.\n Como você foi criado e com quem foi criado implica mais na personalidade da pessoa e no caráter dela. Por mais que eu falando isso não me considero uma pessoa igual as da minha família, minha família por mais que existem muitas brigas são um povo bem unido, falante e com uma personalidade forte, enquanto eu sou bastante individualista e frio. (Sempre que falo que sou frio vem a imagem dos 'sigmas' fã de peaky blinders na mente. INSUPORTÁVEIS!)\n Hoje quase fiz um colega chorar ao falar para ele dar espaço, que ele era muito grudento. Ele disse que faz isso, pois gosta muito de mim e me considera muito. Isso é muito pelo meu 'eu' extrovertido na escola, mas hoje não estava aguentando manter esse personagem e só queria ficar sozinho.\n Recebi elogios de várias pessoas pelo excelente trabalho que fiz na escola hoje, considerado o melhor vídeo editado (sendo bem tratado até mesmo pela galera que não ia muito bem com a minha cara), mas por algum motivo isso mais me deixou melancólico do que aumentou o meu ego… é como se tivesse faltando algo em mim que nada supre, mas não consigo saber nem o que é… não é afeto, atenção ou muito menos amor e carinho. (Por mais que guardo tudo para mim e nunca peço nada, recebendo apenas pela reciprocidade)\n Aaaaahhhh nada como um dia após o outro dia. — 14/04/2023 23:39\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/SIGNO ZZZ.jpg"
+  },
+  {
+    text: "17) ISSO SERVE PARA EU E PARA VOCÊ\n \n O mal do egocêntrico esperto é achar que as outras pessoas são bobas, eu era bem assim, achava que ninguém era mais esperto que eu, mas o ser humano não é idiota, todos defendem seu lado e sempre entram em alguma coisa a fim de uma troca de lucros. Você acha que fazem faculdade porque querem? Trabalham porque querem? Namoram só por namorar? Tudo tem um motivo, uma troca, ninguém é trouxa, e não só material. Por mais que você possa não concordar com a ideia de uma pessoa, ela está fazendo aquilo, pois acredita ser o melhor para ela, isso entra muito bem na política, pois independente se você é da esquerda ou de direita os dois no final querem o bem da própria pele. Ignorar os pensamentos e a opinião do lado oposto é de uma extrema burrice, pois elas juntas podem se complementar e junto com testes e reflexões chegar na melhor ideologia possível ou aquela que se encaixa na realidade do país de cada um.\n Posso estar sendo simplório demais ou estar falando uma completa besteira, mas acredito que é tão raro uma pessoa fazer algo para a outra sem nada em troca que só mães tem esse poder (e olha lá).\n Existem teorias do porquê o ser humano se torna mau, eu acredito que o ser humano já nasce mau e não se torna com o passar do tempo, pois a natureza é má, a lei da sobrevivência é cruel, o mais forte e mais inteligente vence o menos, nos já nascemos com esse extinto primitivo de proteger o nosso lado e de quem amamos custe o que custar (mesmo se isso for prejudicar o próximo)\n mas enfim... ainda sou apenas um jovem de 17 anos lendo pensamentos do maquiavel que não tem experiência de vida o suficiente para ter certeza da minha fala. — 15/04/2023 00:18",
+  },
+  {
+    text: "18) MAIS UM CORTE\n \n Medo… estou perdendo o medo… Medo é uma reação de sobrevivência natural do ser humano, isso que nos faz não morrermos por coisa boba como atravessar uma rodovia movimentada ou se matar por depressão… Tô brincando, queria chegar na depressão, pois é como se 'todo mundo tivesse depressão', mas vai aflorando na pessoa com o tempo e ela se afundando cada vez mais com a sequência de coisas negativas que acontecem na vida.\n As pessoas só não se matam, pois não tem motivo e principalmente por terem medo de morrer, mas quando mais fundo as entram nesse 'poço' vai se importando menos… começando perdendo o medo do isolamento… depois perdendo o medo dos cortes… até perder de fato o medo do suicídio. É como se fosse um padrão, as pessoas que tem depressão fazem sempre a mesma coisa e eu estou seguindo este mesmo caminho. Primeiro acontece um gatilho que faz a pessoa entrar numa profunda tristeza, mas que com o passar dos dias some e com a prática de algum hobby ela esquece, mas quando essa sensação não passa com o tempo e a pessoa começa a ter traços melancólicos e ser mais solitária é quando pode-se dizer que iniciou de fato a depressão, os motivos são diversos como Bullyng, Brigas, Autoestima baixa, dentre outros, porém é quando chega nos cortes que a situação fica mais sinistra, eu via os adolescentes da escola cortados e ficava sem entender, hoje eu cortei meu peito mais uma vez e entendo a sensação... é como se tu tivesses descontando toda suas angústias, ansiedades, problemas do passado, tristezas em você mesmo e a dor do corte não é maior que o do emocional. (Segura Eduardo, segura o choro pf)\n Eu me perguntava: 'POR QUE NÃO PEDE AJUDA? SE A PESSOA ESTÁ NESSA SITUAÇÃO É SÓ DESABAFAR COM ALGUÉM OU PAGAR UM PSICÓLOGO, FAZER UMA TERAPIA' hoje vejo que nada é tão simples assim e no meu caso ainda que sou bastante fechado e orgulhoso faz eu não pedir ajuda de ninguém e infelizmente guardar tudo para mim. De fato pedir ajuda, AJUDA, e tentar resolver tudo sozinho é a pior opção, mas eu vou sair dessa SOZINHO.\n Hoje eu separei (se é que tinha começado) do namoro que eu tinha pois ele relatou que eu não o dava atenção, não tomava atitude. A questão é que deste 2021 nada me anima, me motiva, me faz ter uma euforia enorme, apenas breves felicidades e um leve otimismo para as coisas, mesmo se eu tranza-se com ele, saísse e passa-se momentos inesquecíveis juntos não seria o suficiente para me tirar dessa situação que hoje me encontro, para falar a real não sei o que tiraria, talvez seja apenas falta de maturidade não é mesmo?... enfim este textos já está muito grande. — 18/04/2023 21:54\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/ESSA FOTO MACHUCA.jpg"
+  },
+  {
+    text: "19) O INÍCIO DA MUDANÇA\n \n 4 anos... há 4 anos foi quando tudo foi de ladeira abaixo, sai de um moleque feliz para um adolescente depressivo (uau que original, só mais um), eu sempre desabafei os problemas com meus pais, mas juntou os problemas familiares, financeiros e a quarentena que ninguém tinha saco e mental para lidar com murmurinhos de um adolescente que faz merda o dia inteiro. Com isso eu me isolei e fui guardando todas minhas mágoas apenas para mim mesmo, meus pais foram bem rude comigo durante a quarentena e principalmente meu irmão mais velho que sempre foi filha da puta comigo (minha raiva, angústia e rancor era tão grande que eu passava noites acordado chorando e fiquei mais de 3 meses sem falar com minha mãe, SIM, LITERALMENTE SEM FALAR COM ELA DURANTE 3 MESES NO MESMO AMBIENTE!!!), isso definitivamente acabou com meu psicológico e foi quando meus pais finalmente se separaram após diversas brigas (para tu ter uma noção, teve um dia que tive que separar meus pais, pois um queria agredir o outro, imagina a mente de um filho ver um dos seus pais apanhando) e foi quando toda a bomba acumulada começou a se explodir dentro de mim, comecei a me cortar e a depressão que antes era um 'talvez' virou uma 'certeza'.\n A ideia primária você já sabe, era falar tudo que eu penso e após finalizados eu mostrar para todos que eu confio, principalmente minha família e me matar depois, já que eu não queria mais estar nesse ambiente, nessa vida, nada mais fazia sentido para mim e ainda não faz!\nENTÃO POR QUE ESTÁ FALANDO ISSO?\n Decidi mudar... depois de 4 anos eu decidi finalmente mudar. Ou eu dou um fim nisso ou isso vai dar um fim em mim e na vida ou você enfrenta combate os problemas com a cabeça erguida e determinação (que eu tenho de sobra) ou você resmunga, desiste e se mata de uma vez!\nEntão eu vou deixar de ser essa pessoa, vou desistir dessa ideia do suicídio, VOU COMEÇAR A VIVER MAIS A VIDA! TOMANDO MAIS ATITUDES! FALANDO MAIS COM OS PRÓXIMOS!\n ENFRENTANDO AS ADVERSIDADES DE CADA DIA E NUNCA MAIS DEIXAR ESSE 'EDUARDO' TOMAR CONTA DE MIM DE NOVO.\n É incrível como o corpo humano se adapta e lida muito bem com o HÁBITO, a força que uma rotina tem é muito grande! Se todos os dias você treinar xadrez, pelo PIOR que você seja, com o tempo você vai se aprimorando e tudo vai ficando mais fácil e automático para você, isso serve para as coisas ruins como má postura e SOLIDÃO, quando se isolar se torna um hábito e é muito difícil contornar essa situação e sair dos malefícios dela, por isso você usar o hábito a seu favor é algo tão magnifico e é o que vou fazer para dar a volta por cima.Lealdade para quem foi fiel comigo e me deu apoio nos momentos mais baixos da minha vida, quem preferiu se afastar que se foda. \nEU AINDA VOU ME TORNAR O SER HUMANO QUE EU SONHO SER!!!!!!!!!!!!!!!!!!!!! — 25/04/2023 23:20\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/BAIXE A IMAGEM E AUMENTE A COR.png"
+  },
+  {
+    text: "20) PARABÉNS NOVO ENSINO MÉDIO, VOCÊ CONSEGUIU! CONSEGUIU ME ATRAPALHAR E ATRASAR NO MEU OBJETIVO. \n\n Meus planos era fazer uma faculdade na área da TI como uma ciência da computação por exemplo, porém eu provavelmente não irei conseguir, pois ADIVINHA? Eu preciso passar no ENEM. \n 'mas Eduardo, é só estudar que você passa' e eu lhe respondo: SIM! era para eu estar estudando para o ENEM, mas não dá, eu estou ocupado fazendo o trabalho de projeto de vida, até porque isso é muito mais importante do que aprender QUÍMICA, FILOSOFIA, SOCIOLOGIA ou FÍSICA que eram pra eu ter aprendido no ensino médio e eu NÃO APRENDI porque NÃO COLOCARAM NA GRADE CURRICULAR ESSAS MATÉRIAS. SUBSTITUIRAM POR ELETIVA DE CLASH OF CLANS, PRÁTICA EXPERIMENTAL NA QUAL EU NÃO PRÁTICO ABSOLUTAMENTE NADA, EMPREENDEDORISMO NA QUAL A PROFESSORA QUE DÁ A AULA É POBRE E NUNCA ABRIU UMA EMPRESA NA VIDA, CULTURA DIGITAL QUE BASICAMENTE ME ENSINOU A NÃO SER TÓXICO NA INTERNET (fds) E PASSOU FILMES QUE EU DORMI EM 90% DELES E OUTRAS MATÉRIAS INÚTEIS QUE SÓ ME IMPEDEM DE CONSEGUIR REALIZAR MEU OBJETIVO. FIQUEI 7 HORAS DA MINHA VIDA DE SEGUNDA A SEXTA NA ESCOLA E NÃO SEI COMO EU VOU PASSAR NO ENEM PORQUE NÃO SEI NEM QUAIS SÃO AS 3 LEIS DE NEWTON. SENDO ASSIM EU VOU TER QUE TROCAR DE PLANOS, POIS MICHAEL TEMER E TODOS OUTROS DECIDIRAM QUE ISSO ERA BOM PARA A EDUCAÇÃO BRASILEIRA E JUNTO COM O COVID 19 QUE NINGUÉM APRENDEU PRATICAMENTE NADA NA QUARENTENA FICA IMPOSSÍVEL SEGUIR CARREIRA COM CURSO SUPERIOR APÓS FAZER 18 ANOS.\n Ainda vou dar o meu melhor e ver se consigo alguma bolsa, caso contário o jeito vai ser procurar outros meios efetivos para meus ganhos financeiros, pois eu preciso mudar de vida e de quem está comigo!\n DÓI, DÓI MUITO VER MEU PAI SE MATANDO POUCO A POUCO FUMANDO MAÇOS E MAÇOS DE CIGARROS ENQUANTO SE AFOGA EM BEBIDAS POIS PERDEU SEU BEM MATERIAL MAIS CUSTOSO DA VIDA E SE LAMENTA TODOS OS DIAS POR ISSO, E EU VER ISSO TUDO ACONTECENDO E NÃO FAZER NADA. Eu quero, eu vou tentar, e vou conseguir, eu preciso conseguir, preciso fazer der certo, deixei de me matar para mudar minha vida e de quem eu amo e não posso falhar.\n 2017 foi o ano que quase passamos fome e sempre deram um jeito para nos alimentar... Isso tudo apenas me motiva mais! \n \n PASSO 1 --> SE MOTIVE\n \n Dedique sua vida a aprender e evoluir sem se importar com o que os outros vão pensar — 27/04/2023 23:12\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/PASSOS.png"
+  },
+  {
+    text: "21) SEXUALIDADE ESTERIÓTIPO E PRECONCEITO\n \n SEXUALIDADEEEEEEEEEEEEEE\n Vamo lá, vou entrar nesse tema, pois ESTAVA FALTANDO NÉÉÉ!!\n Eu não entendo do porquê alguns homens se atraem por outros homens assim como mulheres se atraem por outras mulheres já que isso é antí-biológico e não vai haver procriação. Talvez seja por isso que tem muitos conservadores e fiéis que são tão contra o homossexualismo, mas por que o cérebro faz isso? Qual a vantagem disso além do prazer? Posso afirmar que não é algo que você escolhe (pelo menos não foi comigo) e sim algo que você sente, vem de dentro de você, quando menos percebe-se você está apaixonado por um menino mono lux do nordeste e um cabeludinho da escola e não tem como 'desfazer' kkkk, com certeza tem gente que só não vira gay pelo medo dos julgamentos da sociedade. \n Esteriótipo está muito ligado também a sexualidade, pois todos os ignorantes remetem alguém LGBT a pessoas super chatas que falam sobre direitos iguais toda hora, mulheres que não se depilam ou gays que vão te assediar na rua e ser super extravagante a todo momento. Sério, eu odeio esteriótipos, por que por mais que existam pessoas assim, generalizar todos da mesma forma me irrita, eu, por exemplo, sou um bissexual que 95% das pessoas que conversam comigo acham que eu sou hétero, pois não me veem eu escutando Rihanna, Taylor Swift a todo momento, falando fino ou me maquiando \n(O pior é as que falam: 'é bi por enquanto jájá vira gay logo, ou falam que quem é bi é infiel, ou que tá indeciso' pqp...)\n Cada pessoa é única e diferente, a atração é apenas um fator de vários outros que vai determinar como essa pessoa vai ser e isso é normal... O que não é normal é a repressão e o preconceito, por isso eu desconfio tanto que na bíblia fala que não pode ter relações homossexuais, pois na época todos viam isso com maus olhos e falaram ser 'pecado' e quem pratica vai para o inferno para fazer todos ficarem com medo KKKKKKKKKKKK já pensou? Pedrinho mora no interior de Minas Gerais na fazenda do seu pai, viveu sua vida toda capinando mato e criando boi e vai para o MESMO LUGAR que Hitler foi pelo simples fato de ser gay??????????? QUAL O SENTIDO DISSO?? PROIBIDO SER JUSTO AQUI! KKKKKK \n Isso é História. Pega o racismo, por exemplo, é algo estrutural que as pessoas hoje apenas replicam sem nenhum motivo algo que foi dito e praticado antigamente. O que a pessoa ganha sendo racista com a outra? NADA! Ela apenas humilha a pessoa pela cor de pele ou traços corporais, pois ela foi ensinada em algum momento de sua vida, enquanto, na verdade, a cor de pele ou sexualidade NÃO MUDA EM ABSOLUTAMENTE NADA a capacidade do indivíduo para realizar qualquer atividade. É tão idiota o preconceito que eu de fato não consigo entender o porquê as pessoas são tão intolerante. Ninguém nasce racista ou homofóbico se você é intolerante, saiba que VOCÊ FOI ENSINADO A SER ASSIM, MUDE, ATÉ PORQUE NENHUM NEGRO OU GAY ESTÁ TE FAZENDO MAL E SE FIZER NÃO É POR CAUSA DA COR DA PELE OU ORIENTAÇÃO SEXUAL. — 01/05/2023 23:31\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/BISEX.png"
+  },
+  {
+    text: "22) ESTAMOS VIVENDO NO ROLE-PLAY MÁXIMO\n \n Não! Você não é mais inteligente, esperto, ou melhor que eu... assim como eu não sou melhor do que você. Eu tinha essa falsa sensação que eu era superior que os outros por pensar de uma forma diferente do que a maioria ou de fazer o que eles não fazem e pra mim eu NUNCA estava errado, eu NUNCA ADMITIA UM ERRO e hoje vejo o quão imaturo era isso, pensar dessa forma faz você subestimar o próximo e quando eles te superam ou lhe surpreende é quando você se da conta que o mundo não gira em torno de você e que você não é isso tudo que pensa ser, fazendo você se frustrar. Digo isso por experiência própria, pois tento sempre aprender com tudo que acontece, tirando o positivo e negativo do mesmo, isso até me leva a pensar do porquê o ser humano sempre erra nas mesmas coisas, pois se seu vô, por exemplo, invés de estudar e economizar dinheiro gastou tudo e não terminou o ensino médio era para o seu pai no mínimo ser uma classe média com faculdade e você vendo o exemplo dos dois ser rico e assim por diante, pois viu os erros do passado e não os cometeu, porém, o que acontece é nós sabermos o que é errado e cometemos sabendo que vamos nos foder com aquilo mesmo assim. Realmente não entendo NÓS MESMOS, mas no final das contas estamos vivendo num grande 'ROLE-PLAY' pois em algum momento o ser humano viu o quão chato é viver plantando milho e caçando boi e começaram a criar papéis para cada um e hoje existem advogados, policiais, políticos, engenheiros e artistas super famosos que todos respeitam e admiram quando, na verdade. Todos são iguais, todos param uma hora do dia para cagar e batem punheta quando estão sozinhos (por isso não sou fã de ninguém, apenas admiro alguns...) e o dinheiro que todos tanto almejam é um pedaço de papel que o ser humano criou e que todos dão o maior valor de vida a isso e seguem essa vida se esforçando e fingindo ser algo, pois viver igual um chipanzé é muito chato e precisamos estar sempre evoluindo e se adaptando pois quanto mais conforto e tempo de vida, melhor!\n (Ok, eu sei que o ser humano evoluiu com o tempo e criou profissões pois toda raça quer sempre o melhor para ela e se desenvolveu e adptou para isso, mas o chato mesmo é eu não conseguir usar aspas duplas nas palavras e não ter conseguido concertar o botão de voltar...) — 03/05/2023 19:36",
+  },
+  {
+    text: "23) AS APARÊNCIAS ENGANAM... E COMO ENGANAM...\n \n Eu lembro que criei um grupo do esquecimento para escrever lá dentro tudo que eu esquecia que era importante lembrar e até hoje esse grupo não tem uma mensagem, pois nunca lembrei de nada kkkkkkkkkkk tenho até medo do que possa acontecer caso eu entrar no exército com 18 anos e o tenente me dar uma ordem e eu esquecê-la no meio da 'missão', mas tenho confiança que se eu entrar eu vou me dar bem lá dentro ou pelo menos sofrer menos, pois tenho bastante disciplina e uma boa condição física.\n Mesmo sabendo que o exército brasileiro não tem muita importância internacional, pois comparado com o dos americanos ou dos asiáticos o nosso é bem basicão e não estamos preparados para uma guerra, no máximo para crimes dentro do próprio país e ainda sim é algo complexo, pois é algo muito injusto prender um pai de família que roubou alimento no mercado para dar a sua esposa e crianças enquanto tem políticos, milicianos e traficantes filhos das putas roubando 20x mais e lucrando com dinheiro ilícito. \n Isso leva a uma reflexão muito profunda, pois no conto 'O Rouxinol e o Imperador' o imperador punia os ladrões arrancando-lhes um olho como castigo. Porém, quando sua própria filha roubou uma joia, ele teve que decidir se aplicaria a mesma punição nela. Se fosse você no lugar desse imperador, faria o que tem que ser feito ou quebraria a regra? Ser totalmente radical seria o certo? Se não, o que poderia ser aceito e o que não poderia? Quem seria o julgador? O que é o certo ou errado? O que é a verdade? Por que porta se chama porta? Quem decidiu isso? Quem me garante que a realidade é essa que estou vivendo? (Ok, acabei viajando um pouco) não sei responder esses questionamentos, mas que pelo menos deveriam acabar com esse gigante esquema criminoso que existe no Brasil atualmente deveriam, pois criminosos estão por todos os lados e as aparências enganam e pessoas que você menos imagina pode ser um criminoso. (Claro não leve isso ao extremo... SEU PAI NÃO FABRICA METANFETAMINA ESCONDIDO) Sei muito bem disso, pois tinha um professor na escola que eu o admirava bastante e com o tempo descobri que ele ficava com alunas de menor. Isso me espantou de uma forma, pois os dois obviamente sabiam disso e fingiam e disfarçavam tão bem que eu e ninguém nunca desconfiou ou suspeitou de algo. Hoje independente de como as pessoas parecem ser ou o que elas já fizeram ou deixou de fazer, eu nunca excluo a hipótese dela fazer ou ter feito algo extremamente errado ou criminoso que ninguém nunca imaginaria ela fazendo... (por isso sempre digo, nunca confie em ninguém, o ser humano é sujo, nem mesmo você ou eu é digno, crie um laço de amizade e boa vivência com todos, mas sempre com cuidado. E desculpe pelas repetições de 'pois' -_-') — 10/05/2023 23:00\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/Fallitur visio.jpg"
+  },
+  {
+    text: "24) O MUNDO RESUMIDO NO EGOÍSMO, EM DINHEIRO E PRAZER\n \n Slc que frio que está fazendo essa semana e é incrível como cada ano que passa o frio fica cada vez mais frio e o calor fica mais quente, tudo isso pela imprudência humana com o meio ambiente, despejando toneladas de lixo no oceano e toneladas de Dióxido de enxofre, NO₂, CO dentre outros no ar causando o efeito estufa (famoso Aquecimento Global) e levando ao fim do nosso planeta e de NÓS MESMOS, mas para né genteeee precisamos criar mais fábricas de extração de petróleo, precisamos de mais ArcelorMittal e Shell, a China e EUA aumentando seu PIB a cada ano enquanto diminui a CADA ano a expectativa de vida da terra é algo super compreensivo gente, pois é só após enriquecer enfiar todos os bens no cu e ir morar em marte e não preciso nem dizer o egoísmo que existe nessa realidade e pessoas como eu e você que não tem nada a ver com isso, vamos sofrer com as consequências a cada dia, mas nããão o problema é a água que você gasta no banho de 10 minutos ou lavando seu carro porque realmente nós gastamos muito mais água do que o tanto que gastam para criar 1 bilhãoe e 400 cabeças de gado por ano, tirando a água da pastagem, o desmatamento e os gases emitidos pelos bois para o efeito estufa. Talvez a tecnologia será o que vai nos salvar (BOA SER HUMANO, INVENTANDO ALGO PARA RESOLVER SUAS PRÓPRIAS CAGADAS, E CRIANDO OUTRA CAGADAS EM CIMA VIRANDO UM LOOP. PARABÉNS!!!!) pois a tecnologia que não vou ser hipócrita, foi talvez a maior e melhor invenção do ser humano que auxilia todos nós todos os dias e não conseguimos viver sem ela hoje, mas que está saindo do controle, viciando, automatizando e facilitando tanto as coisas que hoje nós não conseguimos parar 10 minutos em silêncio para ler um texto com calma, pois não estamos recebendo dopamina a cada 30 segundos como o Tiktok faz, não é mesmo caro leitor que leu todos os 20 textos em menos de 15 minutos e não absorveu absolutamente NADA (mas desculpa, deve ter sido minha ortografia :)\n Realmente é foda, as grandes empresas estão em busca apenas do dinheiro, e quanto mais tempo prender você em sua rede melhor! Infelizmente o mundo hoje se resume em: Dinheiro e Prazer, pois tudo que todos almejam é ter milhões na conta para poder ir para aonde quiser em todo lugar do mundo, comer do bom e do melhor enquanto relaxa na sua jacuzzi e come puta todo dia (vai me dizer que não é?) e foda-se se está prejudicando outras pessoas ou o mundo, e não, não sou a favor do comunismo por dizer isso... Mas o que mais me assusta é a inteligência artificial, pois não é como se fosse uma novidade no mundo, já tem anos que falam na tv, em filmes ou jornais que os robôs vão dominar o mundo e mesmo sendo ficção pode acontecer (e eu vou agradecer se acontecer, pois a melhor coisa que os robôs podem fazer é exterminar a humanidade e cuidar da terra e dos animais melhor do que a gente), porém olhando de uma forma otimista no qual criamos uma máquina com inteligência para nos auxiliar e melhorar o mundo com isso, não faz sentido sair do controle, pois TODO MUNDO TEM A COMPLETA NOÇÃO QUE ISSO PODE ACONTECER A QUALQUER MOMENTO e se a pessoa teve a inteligência para criar o ChatGPT não tem como ela ser tão burra o suficiente de não saber que existe a possibilidade da autoconsciência artificial. — 14/05/2023 20:38\n\n",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/BOA PAÍSES DE PRIMEIRO MUNDO.png"
+  },
+  {
+    text: "25) O ENCERRAMENTO\n \n  DOOOOOOONT STAY WAAAAAAAAAKE FOR TOO LONGGGGGGGGG \n DON'T GO TO BEEEEEEEED \n IL MAKE A CUP COFFER FOR YOU HEAD \n IL GET YOU UP AND GOING OUT OF BEEEEEEEDD \n Estranhamente quando eu ouvia essa música a uns meses atrás e pensava em me matar eu achei um comentário DO NADA citando 100 motivos para viver, sério eu quase chorei na hora! Foi muita coincidência (ou não... uuhhh...) \n Esse ano está sendo o 'ANO DOS DESAFIOS' para mim, já fiz 30 dias de banho frio, 30 dias de meditação, 30 dias sem consumir sal ou açúcar sem ser o natural do alimento, 30 dias do no fap... e todos eu cumpri! Vou criar um desafio de 60 anos sem cometer suicídio e ver se eu cumpro esse também :D kkkkkk \n Brincadeiras a parte, posso dizer que estou muito melhor de saúde mental apenas por mudar, SIM MUDAR, sair da mesma rotina de solidão e silêncio e ver as coisas com uns olhos mais positivos e tomar atitudes. Talvez foi o choque de realidade, ou os desafios dos 30 dias, ou talvez o medo de saber que eu estava chegando cada vez mais próximo do último passo da depressão, talvez foi tudo isso junto que me estimulou a mudar e por mais que ninguém sai da água pro vinho do nada, estou cada vez mais confiante e animado em me tornar uma pessoa melhor, pois carrego uma frase na minha vida: 'Buscando sempre a melhoria, mental e física' e não é dentro de casa se cortando, resmungando e reclamando da vida em textos do discord que vou melhorar, por mais que se eu pudesse voltar ao passado e fazer tudo diferente eu faria COM CERTEZA, mas não excluo essa fase da minha, pois aprendi muita coisa nela:\n Aprendi uma forma de tratar gente filha da puta de uma forma muito mais cruel do que xingamentos ou agressão. \n Aprendi a me conhecer muito melhor. \n Aprendi a dar importância ao que realmente importa que é o seu futuro e o presente dos seus próximos, então estude e cuide do seu corpo para você agradecê-lo daqui a 10 anos e passe o maior tempo que puder com sua família, sua namorada(o) e seus amigos, pois é a única coisa que você vai carregar quando eles se forem é as lembranças boas que vocês cultivaram juntos no momento.\n E principalmente tudo isso servirá de recordação para eu não esquecer dos piores e mais baixos momentos da minha vida para quando eu estiver no topo eu dar um valor muito maior do que eu daria, pois assim como é na guerra onde a tecnologia mais evolui, é nos piores momento que você é forçado a ter que mudar e se aprimorar.\n Relendo todo esse LIVRO ou 'PODCAST ESCRITO' que fiz durante mais ou menos 5 meses, percebi que falei sobre MUITA COISA e por mais que eu talvez mude de opinião com o tempo (Seja sempre pique Raul Seixas) ainda sim são ideias que me definem e resumem um pouco de como eu sou, do mais é isso, vou continuar dando foco nos estudos (principalmente filosofia, quero me aprofundar mais nela e talvez encontrar respostas de meus questionamentos), academia, terapia e colecionar o maior número de histórias boas possível com que eu amo de verdade. \n Espero ter te motivado de alguma forma e que você me entenda, pois se você está lendo isso é porque você é especial para mim de alguma forma \n Esse é o documento HTML sobre minha mente — 19/05/2023 09:30 \nFim...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Tenho pensamentos suicídas diários\n Estou a 1 dia virado\n Tem 4 dias que não durmo direito - 07/06/2023 04:12\n\n.",
+    img: "NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/O FIM.gif"
+  },
+];
+
+for (let i = 0; i < buttonData.length; i++) {
+  const button = document.createElement("button");
+  button.innerText = `Reflexão ${i + 1}`;
+  button.classList.add("button");
+  button.addEventListener("click", function () {
+    textContainer.innerText = buttonData[i].text;
+    if (buttonData[i].img) {
+      const img = document.createElement("img");
+img.src = buttonData[i].img;
+img.style.position = "relative";
+img.style.bottom = "0";
+img.style.left = "0";
+img.style.width = "500px";
+textContainer.appendChild(img);
+textContainer.style.position = "relative";
+    }
+    const activeButton = document.querySelector(".active");
+    if (activeButton) {
+      activeButton.classList.remove("active");
+    }
+    button.classList.add("active");
+    backButton.style.display = "block";
+  });
+  buttonContainer.appendChild(button);
+}
+
+backButton.addEventListener("click", function() {
+  textContainer.innerText = "";
+  const activeButton = document.querySelector(".active");
+  if (activeButton) {
+    activeButton.classList.remove("active");
+  }
+  backButton.style.display = "none";
+  const firstButton = buttonContainer.querySelector("button");
+  if (firstButton) {
+    firstButton.classList.add("active");
+  }
+});
+let contador = 0;
+
+function solicitarPermissao() {
+  navigator.mediaDevices.getUserMedia({ audio: true })
+    .then(function() {
+      // OI DE NOVO PARA VOCÊ QUE ESTÁ ANALISANDO O CÓDIGO, COMO FOI SEU DIA? BEM? EU NO MOMENTO QUE ESTOU CRIANDO ESSE DOCUMENTO ESTOU SOFRENDO DE DEPRESSÃO, COM PENSAMENTOS SUÍCIDAS DIÁRIOS
+      var audio = new Audio('NÃO ENTRE! (MESMO SABENDO QUE VOCÊ VAI ENTRAR)/SAIA, NÃO TEM NADA QUE LHE INTERESSA AQUI!.mp3');
+      audio.play();
+    })
+    .catch(function(error) {
+      if (contador === 0) {
+        // MAS TENHO CERTEZA QUE NO MOMENTO QUE VOCÊ ESTÁ LENDO ISSO EU JÁ SAI DESSA SITUAÇÃO E ESTOU NUM MOMENTO MUITO MELHOR DA MINHA VIDA
+        alert('Entendo sua preocupação, mas por favor, permita o acesso ao áudio para continuar');
+        contador++;
+      } else {
+        // SE EU PUDESSE TER O QUE EU NÃO CONSIGO, COM CERTEZA EU FARIA ISSO...
+        alert('Já vi que você quer brincar, posso ficar nesse joguinho para sempre se você quiser...');
+      }
+      solicitarPermissao();
+    });
+}
+
+solicitarPermissao();
+
+const senhaCorreta = "Obcecado"; // Você veio aqui no código fonte achar a senha, sério você é um fdp kkkkkkkkkk MAS TABOM VAI LÁ, DESSA VEZ VOCÊ GANHOU DE MIM!
+let tentativasRestantes = 2;
+
+while (tentativasRestantes > 0) {
+  const senhaInserida = window.prompt(`Apenas os de confiança podem acessar esse documento, por favor insira a senha:`);
+
+  if (senhaInserida === senhaCorreta) {
+    alert("Parabéns, você sabe escrever");
+    break;
+  } else {
+    tentativasRestantes--;
+    if (tentativasRestantes > 0) {
+      alert(`Verifique se você não escreveu errado sem perceber '-'`);
+    } else {
+      alert("Desculpe, mas apenas quem tem a senha disponibilizada pode acessar o documento!");
+      alert("Fique com esse maravilhoso vídeo que explica sobre a evolução da desconfiança")
+      window.location.href = "https://www.youtube.com/watch?v=pv7c7zIEWVM&ab_channel=Diggo";
+    }
+  }
+}
+alert("...");
+alert("Eu sempre gostei muito de refletir sabe");
+alert("Mas nunca compartilhei minhas reflexões com ninguém");
+alert("Por isso ninguém nunca soube das minhas opiniões ou nem me conhece direito");
+alert("Minha ideia inicial era por eu estar numa depressão e querendo me matar");
+alert("Eu ia criar um grupo para colocar a maioria das minhas ideias, pensamentos, opiniões, desabafos mesmo");
+alert("E após eu mostrar para VOCÊ que está lendo isso nesse exato momento eu me matar!");
+alert("Tive essa ideia a mais ou menos 2 anos, mas não sabia como fazer");
+alert("Descartei a ideia de se matar por motivos que estará nos textos");
+alert("Mas acabou que esse documento HTML serviu para você que está nessa mesma situação ou parecida que a minha, tentar tirar algo de lição, ou talvez eu te motivar de alguma forma");
+alert("e você que gosta de mim e quer entender um pouco mais do que passa nessa minha cabeça, entrar e me conhecer um pouco.");
+alert("Entre, mas não repare na bagunça... 😄😅");
+const TEMPO_LIMITE = 4700;
+
+window.addEventListener('load', () => {
+  const intervalo = setInterval(() => {
+    const segundosDecorridos = Math.floor((Date.now() - inicio) / 1000);
+    if (segundosDecorridos >= TEMPO_LIMITE) {
+     alert('Vendo o mundo com outros olhos...')
+      alert('Talvez depois disso tudo você possa estar achando que foi uma brincadeira ou que eu estava apenas sendo dramático, mas não, isso foi algo sério...')
+      alert('Os problemas evoluam e mudam com o tempo, essa geração que vivemos infelismente é a dos problemas familiares e psicológicos')
+      alert('Me fale o que achou disso tudo, por favor quero sua opinião');
+      alert('Acabou... Pode ir...')
+      window.close();
+      clearInterval(intervalo);
+    }
+  }, 1000);
+  
+  const inicio = Date.now();
+});
+/* 
+Ok, ok, vou conversar um pouco com você que está aqui no código fonte...
+Eu sempre fui um menino muito agressivo sabe...
+Brigava MUITO na escola e na rua...
+Hoje eu me considero muito tranquilo, pois me obriguei a me controlar
+até porque eu não posso sair virando uma porrada na cara de qualquer pessoa na rua
+mas isso se deve muito ao fato que meu irmão mais velho me batia MUITO
+ele gostava muito de filmes, desenhos, jogos de luta e ficava fissurado nisso
+e ele queria replicar esses golpes visto, na vida real
+e quem que era a vítima? hahahaha eu mesmo
+porém se fosse só isso ainda era de boa, pois era brincadeira apenas
+mas após ele aprender Jiu jitsu e Taekwondo (na vida real)
+ele se sentiu foda de alguma forma e começou a usar isso ao seu favor.
+O ano era 2013 e meus pais trabalhavam o DIA INTEIRO
+a gente tinha acabado de se mudar para esta casa que vivo hoje
+e foi o ano de pesadelo na minha vida.
+ficar sozinho com meu irmão mais velho o dia inteiro era TORTURA
+eu pesava 20 kilos molhado enquanto ele já tinha um corpinho pra idade dele que era por volta de 13-14 anos
+e como nos tinhamos um playstation em casa
+ele ficava o dia inteiro jogando e eu o dia inteiro assistindo ele jogar
+e quando ele ficava puto por alguma coisa que acontecia no jogo ele descontava isso em MIM, ME BATENDO LITERALMENTE (sem motivo nenhum)
+isso quando ele não decidia "praticar arte marcial" comigo, me "ensinando" a lutar, porém a forma dele me "ensinar a lutar" era ME BATENDO E EU TENDO QUE DEFENDER DE QUALQUER JEITO SEM CONSEGUIR REVIDAR, POIS NEM ISSO EU CONSEGUIA
+e claro que tinha ORDENS IMPOSTAS PELOS PAIS NA CASA: Lavar a louça, Lavar o banheiro, Arrumar a casa, Arrumar as camas, etcs...
+e quem que tinha que fazer isso? na teoria o irmão mais velho (ou pelo menos dividir as tarefas), mas era só meus pais saírem de casa que meu irmão me obrigava a fazer tudo sozinho se não ele me batia e ainda pedia para eu falar para meus pais que foi ELE que arrumou tudo :D
+claro que ficava ematomas no meu corpo que adivinha? ele pedia para eu calar a boca e não contar/mostrar para meus pais pois ele iria me bater mais ainda no dia seguinte caso eu contasse, porque no dia seguinte iamos ficar sozinho na mesma casa novamente...
+e óbvio que eu contava mesmo assim na maioria das vezes o que fazia meu irmão apanhar dos meus pais e aumentar ainda mais a raiva dele de mim, minha dele, e dos meus pais dele
+isso durou o ano inteiro até que minha mãe saiu do seu emprego e começou a ficar dentro de casa pois estava grávida do Nicolas...
+isso é um trauma que nunca vou esquecer e por mais que para meu irmão mais velho tudo isso não passou de "brincadeiras" ou "coisa de irmão" e ele nem se quer lembre direito disso, para mim foi um INFERNO
+eu tenho todos os motivos para odiar ele e realmente odiei por anos, mas hoje eu não sinto mais raiva dele, o que foi passado foi passado e a única coisa que ficou foi as marcas na lembrança, por mais que nunca conseguirei perdoa-lo
+isso me tornou uma pessoa muito rancorosa, eu por causa disso NÃO CONSIGO PERDOAR NINGUÉM hoje em dia, infelizmente...
+foi um cenário de tortura física e piscológica na minha vida que além de tudo, não coloco meu irmão como vilão disso tudo pois ele era um adolescente que fazia merda o tempo todo
+queria apenas contar essa fase negra da minha vida... 
+*/
+</script>
+  </body>
+</html>
